@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sri's Weather Predictions</title>
+    <link rel="stylesheet" type="text/css" href= "{{url_for('static',filename='exstyle.css')}}"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='listDates.js')}}"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+	<h1>Welcome to Sri's Weather Application</h1>
+    <input type="date" id="date_picker" min="2013-01-01" value="2013-01-01" required>
+    <button id="sub">Forecast!!</button>
+    <br><br>
+    <div id="showinfo" style="display: none">
+        <h2>Weather Info for Selected Date</h2>
+        <label id="date_label"></label> <br>
+        <label id="TMAX_label"></label> <br>
+        <label id="TMIN_label"></label> <br>
+        <br><br>
+        <h2>Weather Predictions for the next 5 days</h2>
+        <table id="forecast" style="display: none">
+        </table>
+        <br><br>
+        <div id="plot-table" style="width: 50%">
+        </div>
+    </div>
+    <br><br>
+    <div id="OpenAPI" style="display: none">
+        <h2>Get Weather Infomation from OpenWeatherMap using Zip Code</h2>
+        <h3>Displays Weather Information for current date + 5 days</h3>
+        <input type="number" id="zipcode" placeholder="Zipcode" max="99999" min="1001" required/>
+        <button id="zipsub">OpenWeatherMap Forecast!!</button>
+        <div id="infor" style="display: none">
+            <h2>Weather Predictions for the next 5 days from OpenWeatherMap API</h2>
+            <table id="opentable">
+            </table>
+            <br><br>
+            <div id="plot-open" style="width:50%">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
