@@ -1,4 +1,4 @@
-# Assignment3
+# Basic details of the project
 
 Cloud VM Provider - AWS EC2 - Amazon Linux AMI <br/>
 Tools Used - Python Flask, JSON, AJAX, JQuery, HTML, Plotly.js<br/>
