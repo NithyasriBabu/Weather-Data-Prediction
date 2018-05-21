@@ -1,4 +1,4 @@
-# Project1 - Docker Image for Weather Web Service 
+# Docker Image for Weather Web Service 
 
 Commands to Access and Run the Docker Image:
 -
